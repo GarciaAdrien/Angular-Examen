@@ -1,5 +1,10 @@
-export type Statistiques = {
-  identifiant : string,
-  titre: string,
-  valeur: string
+export class Statistiques  {
+  constructor(
+    public identifiant : string,
+    public titre: string,
+    public valeur: string
+
+    ) {}
+
 }
+
