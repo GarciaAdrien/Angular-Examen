@@ -1,2 +1,5 @@
 <!--<p>Statistique components :{{ statistique.identifiant }} {{ statistique.titre }} {{ statistique.valeur }}</p>!-->
 
+<ng-container *ngFor="let statistiques of tabStatistiques">
+<p>Statistique :{{ statistique.identifiant }} {{ statistique.titre }} {{ statistique.valeur }}</p>
+</ng-container>

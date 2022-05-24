@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import {Statistiques } from '../models/Statistiques'
+import { statistiqueservice } from '../services/statistique';
 @Component({
   selector: 'app-statistique',
   templateUrl: './statistique.component.html',
@@ -7,10 +8,14 @@ import {Statistiques } from '../models/Statistiques'
 })
 export class StatistiqueComponent implements OnInit {
   @Input() statistique!: Statistiques;
-  constructor() {
+ public  tabStatistiques;
 
+  constructor(refSingleton : statistiqueservice)
+  {
+this.tabStatistiques =  refSingleton.tabStatistiques
 
    }
+
 
   ngOnInit(): void {
   }
