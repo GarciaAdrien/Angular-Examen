@@ -4,9 +4,11 @@
 <router-outlet></router-outlet>
 <app-statistique [statistique]="statistique1"></app-statistique>
 <app-statistique [statistique]="statistique2"></app-statistique>
--->
+
 <div *ngFor="let statistique of statistique1">
   <p>Statistique 1 : {{ statistique.identifiant }} {{ statistique.titre }} {{ statistique.valeur }}</p>
 </div>
 
 <button (click)="Supprimer()">Supprimer</button>
+-->
+<p>Statistique 1 : {{ statistique1 }} </p>
