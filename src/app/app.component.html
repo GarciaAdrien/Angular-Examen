@@ -1,7 +1,7 @@
 <!--
 <p>Statistique 1 : {{ statistique1.titre }} </p>
 <p>Statistique 2 : {{ statistique2.titre }} </p>
-<router-outlet></router-outlet>
+
 <app-statistique [statistique]="statistique1"></app-statistique>
 <app-statistique [statistique]="statistique2"></app-statistique>
 
@@ -10,5 +10,8 @@
 </div>
 
 <button (click)="Supprimer()">Supprimer</button>
--->
-<p>Statistique 1 : {{ statistique1 }} </p>
+
+<p>Statistique 1 : {{ statistique1 }} </p>-->
+<button [routerLink]="['/liste']">Liste</button>
+<button [routerLink]="['/ajout']">Nouveau</button>
+<router-outlet></router-outlet>
